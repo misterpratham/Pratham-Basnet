@@ -12,3 +12,21 @@ window.addEventListener('click', function(event) {
     dropdown.classList.add('hidden');
   }
 });
+
+
+
+document.querySelectorAll('.scroll-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Get the target section
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        // Scroll with animation
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth',
+        });
+      });
+    });
