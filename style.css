@@ -75,3 +75,7 @@
 .item6 {
   animation-delay: calc(10s / 6 * (6 - 6) * -1);
 }
+
+ html {
+      scroll-behavior: auto; /* Disable Tailwind's scroll-smooth for custom animation */
+    }
