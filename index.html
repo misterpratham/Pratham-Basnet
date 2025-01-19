@@ -148,12 +148,12 @@
     <!-- Contact Section -->
     <section id="contact" class="flex flex-col items-center py-8">
       <h2 class="text-3xl font-bold text-[white] mb-6">Contact</h2>
-      <form action="#" class="bg-[#D39D55] p-6 rounded-lg w-full max-w-lg text-black">
+      <form action="mailto:prathambasnet963@gmail.com" method="POST" enctype="multipart/form-data" class="bg-[#D39D55] p-6 rounded-lg w-full max-w-lg text-black">
         <div class="flex flex-col gap-4">
-          <input type="text" placeholder="First Name" class="p-3 border rounded-md" required>
-          <input type="text" placeholder="Last Name" class="p-3 border rounded-md" required>
-          <input type="email" placeholder="Email" class="p-3 border rounded-md" required>
-          <textarea placeholder="Message" class="p-3 border rounded-md h-32"></textarea>
+          <input type="text" name="first-name" placeholder="First Name" class="p-3 border rounded-md" required>
+          <input type="text" name="last-name" placeholder="Last Name" class="p-3 border rounded-md" required>
+          <input type="email" name="email" placeholder="Email" class="p-3 border rounded-md" required>
+          <textarea placeholder="Message" name="message" class="p-3 border rounded-md h-32"></textarea>
           <button type="submit" class="bg-[#7C00FE] text-white p-3 rounded-md mt-4 hover:bg-[#5a00c9]">
             Submit
           </button>
